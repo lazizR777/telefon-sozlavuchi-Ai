@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d2f5e">
+  <title>Telefon Sozlovchi</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#bosh-sahifa" aria-label="Bosh sahifa">
+        <span class="brand-icon">📱</span>
+        <span>
+          <strong>Telefon Sozlovchi</strong>
+          <small>Telefon ta'miri va buyurtmalar</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Asosiy menyu">
+        <a href="#xizmatlar">Xizmatlar</a>
+        <a href="#qanday">Qanday ishlaydi</a>
+        <a href="#buyurtmalar">Buyurtmalarim</a>
+      </nav>
+
+      <button class="profile-button" id="profileButton" type="button">
+        👤 Kirish
+      </button>
+
+      <button class="menu-button" id="menuButton" type="button" aria-label="Menyuni ochish">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobil menyu">
+      <a href="#xizmatlar">Xizmatlar</a>
+      <a href="#qanday">Qanday ishlaydi</a>
+      <a href="#buyurtmalar">Buyurtmalarim</a>
+    </nav>
+  </header>
+
+  <main id="bosh-sahifa">
+    <section class="hero reveal">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          Onlayn usta xizmati
+        </div>
+        <h1>Telefoningizga <span>yangi hayot</span> bering</h1>
+        <p>
+          Muammo haqida ma'lumot bering, yaqin servisni tanlang,
+          narxni tasdiqlang va ta'mir jarayonini kuzating.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#forma">Buyurtma berish</a>
+          <a class="button button-secondary" href="#qanday">Qanday ishlaydi?</a>
+        </div>
+        <div class="hero-trust">
+          <div><strong>500+</strong><small>Mamnun mijoz</small></div>
+          <div><strong>40+</strong><small>Tekshirilgan usta</small></div>
+          <div><strong>4.9/5</strong><small>O‘rtacha baho</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Telefon buyurtma namunasi">
+        <div class="visual-ring visual-ring-one"></div>
+        <div class="visual-ring visual-ring-two"></div>
+        <div class="phone-device">
+          <div class="phone-camera"></div>
+          <div class="phone-screen">
+            <div class="phone-status"><span>9:41</span><span>● ᯤ ▰</span></div>
+            <p class="phone-greeting">Salom, Aziz 👋</p>
+            <p class="phone-question">Nima bilan yordam beramiz?</p>
+            <button class="phone-card" type="button">
+              <span class="phone-card-icon">🛠️</span>
+              <span>
+                <strong>Yangi buyurtma</strong>
+                <small>Muammoni kiriting</small>
+              </span>
+              <b>›</b>
+            </button>
+            <strong class="phone-label">XIZMATLAR</strong>
+            <div class="phone-services">
+              <span>🖥️<small>Ekran</small></span>
+              <span>🔋<small>Batareya</small></span>
+              <span>🔌<small>Port</small></span>
+            </div>
+            <div class="phone-progress">
+              <span class="pulse-dot"></span>
+              Buyurtma: tekshirilyapti
+            </div>
+          </div>
+        </div>
+        <div class="floating-card floating-card-top">
+          <span>✦</span>
+          <div><strong>Tekshirilgan usta</strong><small>Guvohlangan servis</small></div>
+        </div>
+        <div class="floating-card floating-card-bottom">
+          <span class="floating-check">✓</span>
+          <div><strong>Buyurtma qabul qilindi</strong><small>Taxminan 10 daqiqada</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-section section-wrap reveal" id="xizmatlar">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">XIZMATLAR</span>
+          <h2>Telefoningiz uchun <span>to'liq yechim</span></h2>
+        </div>
+        <p>
+          Eng keng tarqalgan nosozliklar bo'yicha xizmatni tanlang
+          va usta sizga narx taklifini yuborsin.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <button class="service-card" type="button" data-problem="Ekran sinishi">
+          <span class="service-icon">▣</span>
+          <strong>Ekran sinishi</strong>
+          <small>Sensor, displey va ekran ta'miri</small>
+          <span class="service-arrow">↗</span>
+        </button>
+
+        <button class="service-card" type="button" data-problem="Batareya muammosi">
+          <span class="service-icon green">ϟ</span>
+          <strong>Batareya</strong>
+          <small>Batareya va quvvat muammolari</small>
+          <span class="service-arrow">↗</span>
+        </button>
+
+        <button class="service-card" type="button" data-problem="Quvvat olmayapti">
+          <span class="service-icon purple">⌁</span>
+          <strong>Quvvatlash</strong>
+          <small>Port, kabel va quvvatlash davri</small>
+          <span class="service-arrow">↗</span>
+        </button>
+
+        <button class="service-card" type="button" data-problem="Kamera ishlamayapti">
+          <span class="service-icon orange">◎</span>
+          <strong>Kamera va ovoz</strong>
+          <small>Kamera, mikrofon va karnay</small>
+          <span class="service-arrow">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="process-section" id="qanday">
+      <div class="section-wrap">
+        <div class="process-heading reveal">
+          <span class="section-kicker">QANDAY ISHLAYDI</span>
+          <h2>Ta'mirlash jarayoni <span>3 qadam</span></h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span class="process-number">01</span>
+            <span class="process-icon">✎</span>
+            <h3>Buyurtma bering</h3>
+            <p>Telefon modeli, muammo va aloqa ma'lumotlarini kiriting.</p>
+          </article>
+          <article class="process-card reveal">
+            <span class="process-number">02</span>
+            <span class="process-icon">✓</span>
+            <h3>Narxni tasdiqlang</h3>
+            <p>Tekshiruvdan keyin narx va muddatni tasdiqlaysiz.</p>
+          </article>
+          <article class="process-card reveal">
+            <span class="process-number">03</span>
+            <span class="process-icon">↗</span>
+            <h3>Ta'mirga oling</h3>
+            <p>Holatni kuzating, telefon tayyor bo'lgach oling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-section section-wrap reveal" id="forma">
+      <div class="order-copy">
+        <span class="section-kicker">YANGI BUYURTMA</span>
+        <h2>Telefoningizni <span>tezroq ta'mirlating</span></h2>
+        <p>
+          Forma to'ldiring va buyurtmangizni ro'yxatga qo'shing.
+          Mijoz va demo usta holatlari shu sayt ekranida boshqariladi.
+        </p>
+        <ul class="order-benefits">
+          <li>Usta narxini avval ko'rishingiz mumkin</li>
+          <li>Buyurtma holatini real vaqtda kuzatasiz</li>
+          <li>Telefoningizga kafolat holati qo'shiladi</li>
+        </ul>
+      </div>
+
+      <form class="order-form" id="orderForm" novalidate>
+        <div class="form-title">
+          <div>
+            <h3>Ta'mir buyurtmasi</h3>
+            <p>Hamma maydonni to'ldiring</p>
+          </div>
+          <span>↗</span>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Telefon brendi
+            <select id="brand" required>
+              <option value="">Tanlang</option>
+              <option>Apple</option>
+              <option>Samsung</option>
+              <option>Xiaomi</option>
+              <option>Redmi</option>
+              <option>Honor</option>
+              <option>Huawei</option>
+              <option>Oppo</option>
+              <option>Vivo</option>
+              <option>Boshqa</option>
+            </select>
+          </label>
+
+          <label>
+            Telefon modeli
+            <input id="model" type="text" placeholder="Masalan: iPhone 13" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Nosozlik turi
+            <select id="problem" required>
+              <option value="">Tanlang</option>
+              <option>Ekran sinishi</option>
+              <option>Batareya muammosi</option>
+              <option>Quvvat olmayapti</option>
+              <option>Kamera ishlamayapti</option>
+              <option>Dasturiy muammo</option>
+              <option>Ovoz yoki mikrofon</option>
+              <option>Boshqa nosozlik</option>
+            </select>
+          </label>
+
+          <label>
+            Yetkazish usuli
+            <select id="delivery">
+              <option>O'zim olib boraman</option>
+              <option>Usta olib ketadi</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Telefon raqamingiz
+          <input id="phone" type="tel" placeholder="+998 90 123 45 67" required>
+        </label>
+
+        <label>
+          Muammo haqida
+          <textarea id="description" rows="4" placeholder="Nosozlikni qisqacha yozing..."></textarea>
+        </label>
+
+        <label>
+          Rasm (ixtiyoriy)
+          <input id="photo" type="file" accept="image/*">
+        </label>
+
+        <button class="button button-primary full-button" type="submit">
+          Buyurtma yuborish <span>↗</span>
+        </button>
+      </form>
+    </section>
+
+    <section class="orders-section section-wrap reveal" id="buyurtmalar">
+      <div class="orders-heading">
+        <div>
+          <span class="section-kicker">BUYURTMALARIM</span>
+          <h2>Jarayonni kuzating</h2>
+        </div>
+        <button class="button button-secondary" id="clearOrders" type="button">
+          Tarixni tozalash
+        </button>
+      </div>
+
+      <div class="order-list" id="orderList">
+        <div class="order-empty">
+          Hozircha buyurtmalar yo'q. Forma orqali birinchi buyurtmani bering.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#bosh-sahifa">
+      <span class="brand-icon">📱</span>
+      <span><strong>Telefon Sozlovchi</strong><small>Ta'mir xizmati</small></span>
+    </a>
+    <p>© 2026 Telefon Sozlovchi</p>
+    <a href="#forma">Yordam kerakmi? ↗</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="profile-overlay" id="profileOverlay" hidden>
+    <form class="profile-modal" id="profileForm" novalidate>
+      <button class="modal-close" id="modalClose" type="button" aria-label="Yopish">×</button>
+      <span class="modal-icon">👤</span>
+      <h2>Xush kelibsiz!</h2>
+      <p>Buyurtma berish uchun profilingizni yarating.</p>
+
+      <label>
+        Ismingiz
+        <input id="customerName" type="text" placeholder="Masalan: Laziz" required>
+      </label>
+
+      <label>
+        Telefon raqamingiz
+        <input id="customerPhone" type="tel" placeholder="+998 90 123 45 67" required>
+      </label>
+
+      <button class="button button-primary full-button" type="submit">
+        Davom etish
+      </button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
